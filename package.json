@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-lecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss build ./css/styles.css -o ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.3"
+  }
+}

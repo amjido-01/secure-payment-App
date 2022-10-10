@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment App</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-primary-white">
+
+    <!-- body container -->
+    <div class="wrapper">
+        <!-- navbar start -->
+        <nav class="bg-secondary-blue px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-20 top-0 left-0  border-gray-200 dark:border-gray-600">
+            <!-- navbar container -->
+            <div class="container bg-secondary-blue flex flex-wrap justify-between items-center mx-auto">
+                <!-- logo section -->
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> -->
+                    <span class="self-center text-xl font-semibold whitespace-nowrap  text-white">BankSecure</span>
+                </a>
+                <!-- get app button section -->
+                <div class="flex md:order-2">
+                    <button type="button" class="text-black bg-secondary-brown hover:bg-primary-brown focus:ring-2 focus:outline-none focus:ring-primary-brown font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Get App</button>
+                        <!-- dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 -->
+                        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-white" aria-controls="navbar-sticky" aria-expanded="false">
+                            <!--  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 -->
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <!-- navbar links container -->
+                <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <!-- navbar ul -->
+                    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-secondary-blue dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <!-- <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Payment</a>
+                        </li> -->
+                        <!-- payment page link -->
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Payments</a>
+                        </li>
+                          <!-- transaction page link -->
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Transactions</a>
+                        </li>
+                          <!-- help page link -->
+                        <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <!-- hero section -->
+        <div class="container-fluid mx-auto hero bg-linear-blue " style="">
+            <!-- hero section container -->
+            <div class="container block md:flex justify-evenly  mx-auto">
+                <!-- hero section main content -->
+                <div class="hero-content text-primary-white flex flex-col justify-center ">
+                    <!-- hero section content header -->
+                    <div class="content-heading" >
+                        <div class="mt-10">
+                            <h1 class="text-primary-white uppercase text-xl md:text-3xl font-akshar">the next generation</h1>
+                            <h1 class="text-white uppercase font-semibold text-2xl md:text-3xl ">PAYMENT METHOD</h1>
+                        </div>
+
+                        <p class="my-5 leading-normal">
+                            send, recieve and pay bills anywhere in this<br>
+                            world with one-click and fully secure<br>
+                            payment method.
+                        </p>
+                    </div>
+                    <!-- hero section button -->
+                    <div class="flex justify-center">
+                        <button
+                        type="button" class="text-black bg-secondary-brown hover:bg-primary-brown focus:ring-2 focus:outline-none focus:ring-primary-brown font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+                        Download Now          
+                        </button>
+                    </div>
+                    <!-- hero section mini cards -->
+                    <div class="content-cards flex justify-evenly mt-5">
+                        <div>
+                            <a href="#" class="w-full sm:w-auto mx-2 bg-linear-blue-primary shadow-sm  hover:bg-secondary-blue focus:ring-2 focus:outline-none focus:ring-linear-blue text-white  flex flex-col items-center justify-center px-4 py-2.5 ">
+                                <img src="/images/Suspension and reinstatement 1.svg" class=" w-14 h-7" alt="avater" aria-hidden="true" focusable="false" data-prefix="fab" role="img">
+                                <div class="">
+                                    <div class="mb-1 text-xs">1M + Users</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="w-full sm:w-auto mx-2 bg-linear-blue-primary shadow-sm  hover:bg-secondary-blue focus:ring-2 focus:outline-none focus:ring-linear-blue text-white  flex flex-col items-center justify-center px-4 py-2.5 ">
+                                <img src="/images/225 1.svg" class=" w-14 h-7" alt="avater" aria-hidden="true" focusable="false" data-prefix="fab" role="img">
+                                <div class="">
+                                    <div class="mb-1 text-xs">100% Secure</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <!-- box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; -->
+                            <a href="#" style="width: 100%;" class="w-full sm:w-auto mx-2 bg-linear-blue-primary shadow-sm  hover:bg-secondary-blue focus:ring-2 focus:outline-none focus:ring-linear-blue text-white  flex flex-col items-center justify-center px-4 py-2.5 ">
+                                <img src="/images/135 1.svg" class=" w-full h-7" alt="avater" aria-hidden="true" focusable="false" data-prefix="fab" role="img">
+                                <div class="">
+                                    <div class="mb-1 text-xs">0 Fees</div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <span>No money, no extra fees required</span>
+                </div>
+
+                <!-- hero section image -->
+                <div class="hidden md:block hero-image my-4 relative border">
+                    <img class="" style="width: 70%;" src="/images/950 1.png" alt="" srcset="">
+
+                    <a href="#" style="top: 40%;" class="absolute -left-4 w-full sm:w-auto backdrop-blur-3xl bg-white/30 text-white rounded-lg inline-flex items-center justify-between px-4 py-2.5 ">
+                        <img class="w-10 h-10 rounded-full mt-2 mr-2" src="/images/Ellipse 2.png" alt="Rounded avatar">
+                        <div class="text-left">
+                            <div style="font-size: 15px;" class="mb-1 text-xs">Total Balance</div>
+                            <div class="-mt-1 font-sans text-4xl">$4235.50</div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="top: 15%; right: 25%; height: 40px;" class="absolute sm:w-auto backdrop-blur-3xl bg-white/30 rounded-lg inline-flex items-center justify-between text-center px-4 py-2.5 ">
+                        <svg style="color: #deb328; " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-10 h-6 text-secondary-brown">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M10.5 8.25h3l-3 4.5h3" />
+                        </svg>
+                          
+                        <div class="text-left">
+                            <div style="font-size: 15px;" class="mb-1 text-white text-xs">Money sent</div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="top: 40%; right: 20%; height: 40px;" class="absolute  w-full sm:w-auto backdrop-blur-3xl bg-white/30 text-white rounded-lg inline-flex items-center justify-between px-4 py-2.5 ">
+                        <svg style="color: #deb328; " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-10 mr-2 h-6 text-secondary-brown">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M10.5 8.25h3l-3 4.5h3" />
+                        </svg>
+                        <div class="text-left">
+                            <div style="font-size: 15px;" class="mb-1 text-xs">Money recieve</div>
+                        </div>
+                    </a>
+
+
+                    <div style="top: 90%; left: 4%;" class="border absolute">
+                       <div class="flex ml-4">
+                        <span class=" absolute mt-1 w-2.5 h-2.5 bg-green-500 border-2  rounded-full"></span>
+                        <span class="text-white ml-5 text-sm">Active Users</span>
+                       </div>
+                        <div  class="flex -space-x-4 ">
+                            <img class="w-10 h-10 rounded-full" src="/images/Ellipse 2.png" alt="">
+                            <img class="w-10 h-10 rounded-full" src="/images/avater.jpg" alt="">
+                            <img class="w-10 h-10 rounded-full" src="/images/Ellipse 2.png" alt="">
+                            <img class="w-10 h-10 rounded-full" src="/images/avater.jpg" alt="">
+                            <a class="flex justify-center items-center w-10 h-10 text-xs font-medium text-white bg-linear-blue rounded-full" href="#">+100</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          
+        </div>
+
+
+        <!-- <section class="bg-secondary-white">
+            <div class="container border flex justify-center items-center">
+                <div class="section-img border border-gray-900">
+                    <img src="/images/Wallet_Cryptocurrency_Mobile_App 2.png" alt="" srcset="">
+                </div>
+
+                <div class="section-content border border-gray-900">
+                    <h1>Make Easier Payment</h1>
+                    <h1>Online With One Click</h1>
+
+                    <p>Send, recieve and pay bills anywhere in this <br>
+                    world with one-click and fully secure <br>
+                    payment method
+                    </p>
+                </div>
+            </div>
+        </section> -->
+        
+       
+    </div> 
+    
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
