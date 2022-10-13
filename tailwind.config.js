@@ -2,6 +2,12 @@
 module.exports = {
   content: ["./**/*.{html, js}"],
   theme: {
+    screens: {
+      'sm': '280px',
+      'md': '470px',
+      'lg': '740px',
+      'xl': '780px'
+    },
     extend: {
       dropShadow: {
         
