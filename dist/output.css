@@ -1039,6 +1039,10 @@ input[type="range"]::-ms-fill-lower {
   width: 50%;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1621,6 +1625,11 @@ input[type="range"]::-ms-fill-lower {
     line-height: 2.25rem;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:font-medium {
     font-weight: 500;
   }
@@ -1722,5 +1731,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:font-normal {
     font-weight: 400;
+  }
+
+  .lg\:text-green-500 {
+    --tw-text-opacity: 1;
+    color: rgb(14 159 110 / var(--tw-text-opacity));
   }
 }
