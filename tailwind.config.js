@@ -21,6 +21,9 @@ module.exports = {
     extend: {
       dropShadow: {
         
+      },
+      backgroundImage: {
+        'hero': "url('./images/download (1).jpg')"
       }
     },
     colors: {
