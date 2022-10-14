@@ -3,10 +3,19 @@ module.exports = {
   content: ["./**/*.{html, js}"],
   theme: {
     screens: {
+      //small screen
       'sm': '280px',
+      // large small screen
       'ls': '390px',
+      // medium screen
       'md': '470px',
+      //large medium
+      'lm': '560px',
+      // extra-large medium
+      'xm': '640px',
+      // large screen
       'lg': '740px',
+      // extra-large screen
       'xl': '780px'
     },
     extend: {
