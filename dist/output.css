@@ -1349,6 +1349,22 @@ input[type="range"]::-ms-fill-lower {
   font-size: 30px;
 }
 
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1760,6 +1776,14 @@ input[type="range"]::-ms-fill-lower {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
   }
 
   .md\:font-medium {
