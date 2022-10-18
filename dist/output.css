@@ -948,6 +948,11 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: auto;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -994,8 +999,8 @@ input[type="range"]::-ms-fill-lower {
   margin-left: 1rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-\[2px\] {
+  margin-top: 2px;
 }
 
 .ml-5 {
@@ -1006,8 +1011,8 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1.25rem;
 }
 
-.mt-2\.5 {
-  margin-top: 0.625rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1056,10 +1061,6 @@ input[type="range"]::-ms-fill-lower {
 
 .h-\[70px\] {
   height: 70px;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .w-full {
@@ -1345,24 +1346,12 @@ input[type="range"]::-ms-fill-lower {
   font-size: 12px;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .text-\[9px\] {
   font-size: 9px;
-}
-
-.text-\[35px\] {
-  font-size: 35px;
-}
-
-.text-\[25px\] {
-  font-size: 25px;
 }
 
 .font-light {
@@ -1426,6 +1415,12 @@ input[type="range"]::-ms-fill-lower {
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1778,12 +1773,12 @@ input[type="range"]::-ms-fill-lower {
     line-height: 1.75rem;
   }
 
-  .md\:text-\[10px\] {
-    font-size: 10px;
-  }
-
   .md\:text-\[30px\] {
     font-size: 30px;
+  }
+
+  .md\:text-\[10px\] {
+    font-size: 10px;
   }
 
   .md\:font-medium {
@@ -1869,6 +1864,11 @@ input[type="range"]::-ms-fill-lower {
     left: 15%;
   }
 
+  .lg\:my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1895,6 +1895,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-evenly {
