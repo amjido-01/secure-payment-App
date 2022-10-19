@@ -239,7 +239,7 @@
                 <div class="section-content my-4">
                     <div class="section-header mb-5 font-extralight text-center lg:text-start">
                         <!-- text-primary-white text-xs uppercase font-thin sm:font-extralight sm:text-sm md:text-2xl lg:text-2xl font-akshar -->
-                        <h1 class="text-xs text-white uppercase font-thin sm:font-extralight sm:text-sm md:text-[20px] lg:text-2xl font-akshar">Why use Banksecure?</h1>
+                        <h1 class="text-xs text-white uppercase font-thin sm:font-extralight sm:text-sm md:text-[20px] lg:text-2xl font-akshar">Why use <span class="why italic underline text-secondary-brown"></span> </h1>
                     </div>
 
                     <div class="section-body text-white text-center lg:text-start mb-5">
@@ -314,9 +314,9 @@
        
 
 
-        <section class="bg-secondary-white border border-gray-900">
+        <section class="bg-secondary-white">
 
-            <div class="block lg:flex lg:flex-row lg:justify-evenly border items-center">
+            <div class="block lg:flex lg:flex-row lg:justify-evenly  lg:ml-[50px] items-center">
              
                 <div class="section-content">
                     <div class="section-header my-5  font-extralight text-center lg:text-start">
@@ -338,18 +338,16 @@
                   </div>
                 </div>
 
-                <div class="section-img border border-red-400 w-full ">
-                 
- 
-                            
+                <div class="section-img w-full lg:w-[40%] lg:ml-[10%]">
+                                             
                                         
-                    <div id="accordion-collapse" data-accordion="collapse" class="border border-gray-900">
+                    <div id="accordion-collapse" data-accordion="collapse" class="">
 
                        
 
                         <h2 id="accordion-collapse-heading-2">
                             <button type="button" class="flex items-center justify-between w-full mx-1 px-5 text-left border border-b-2 focus:ring-4 focus:ring-gray-200" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                                <span class="text-center md:text-center lg:text-start my-5 font-thin text-xs sm:font-extralight sm:text-sm lg:font-normal lg:text-base leading-normal">Is there a Figma file available?</span>
+                                <span class="text-center md:text-center lg:text-start my-5 font-thin text-xs sm:font-extralight sm:text-sm lg:font-normal lg:text-base leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing?</span>
                                 <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
                         </h2>
@@ -361,16 +359,16 @@
                         </div>
 
                         <h2 id="accordion-collapse-heading-3">
-                            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-                                <span>What are the differences between Flowbite and Tailwind UI?</span>
+                            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-red-500 border-b border-gray-900 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-grey-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum?</span>
                                 <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
                         </h2>
                         
 
                         <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
-                            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                                <p class="mb-2 font-thin text-xs sm:font-extralight sm:text-sm lg:font-normal lg:text-base">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                            <div class="p-5 font-light bg-white dark:border-gray-700">
+                                <p class="mb-2 font-thin text-xs sm:font-extralight sm:text-sm lg:font-normal lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda ex fugit adipisci, dolores nihil dolorem eaque totam maxime neque.</p>
                               
                             </div>
                         </div>
@@ -399,6 +397,13 @@
 
         var typed = new Typed('.move', {
             strings: ['One Click'],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop:true
+        });
+
+        var typed = new Typed('.why', {
+            strings: ['Banksecure?'],
             typeSpeed: 200,
             backSpeed: 100,
             loop:true
