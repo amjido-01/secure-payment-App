@@ -933,68 +933,8 @@ input[type="range"]::-ms-fill-lower {
   left: 15%;
 }
 
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-\[\] {
-  bottom: ;
-}
-
-.bottom-\[5\%\] {
-  bottom: 5%;
-}
-
-.top-\[5\%\] {
-  top: 5%;
-}
-
-.top-\[2\%\] {
-  top: 2%;
-}
-
-.top-\[10\%\] {
-  top: 10%;
-}
-
-.top-\[20\%\] {
-  top: 20%;
-}
-
-.top-\[25\%\] {
-  top: 25%;
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[5\%\] {
-  left: 5%;
-}
-
-.left-\[10\%\] {
-  left: 10%;
-}
-
-.left-\[20\%\] {
-  left: 20%;
-}
-
-.top-\[35\%\] {
-  top: 35%;
-}
-
 .top-\[40\%\] {
   top: 40%;
-}
-
-.left-\[30\%\] {
-  left: 30%;
-}
-
-.left-\[35\%\] {
-  left: 35%;
 }
 
 .left-\[40\%\] {
@@ -1199,14 +1139,6 @@ input[type="range"]::-ms-fill-lower {
   width: 57%;
 }
 
-.w-\[20\] {
-  width: 20;
-}
-
-.w-\[20\%\] {
-  width: 20%;
-}
-
 .w-\[25\%\] {
   width: 25%;
 }
@@ -1316,6 +1248,11 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-green-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(4 108 78 / var(--tw-border-opacity));
+}
+
 .border-gray-900 {
   --tw-border-opacity: 1;
   border-color: rgb(17 24 39 / var(--tw-border-opacity));
@@ -1334,11 +1271,6 @@ input[type="range"]::-ms-fill-lower {
 .border-green-800 {
   --tw-border-opacity: 1;
   border-color: rgb(3 84 63 / var(--tw-border-opacity));
-}
-
-.border-green-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(4 108 78 / var(--tw-border-opacity));
 }
 
 .bg-secondary-white {
@@ -1442,16 +1374,6 @@ input[type="range"]::-ms-fill-lower {
   padding-right: 1rem;
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1504,6 +1426,18 @@ input[type="range"]::-ms-fill-lower {
 
 .text-\[9px\] {
   font-size: 9px;
+}
+
+.text-\[5px\] {
+  font-size: 5px;
+}
+
+.text-\[3px\] {
+  font-size: 3px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .font-light {
@@ -2046,10 +1980,6 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 740px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:left-\[40px\] {
     left: 40px;
   }
@@ -2064,14 +1994,6 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:left-\[15\%\] {
     left: 15%;
-  }
-
-  .lg\:right-\[65\%\] {
-    right: 65%;
-  }
-
-  .lg\:bottom-\[10\%\] {
-    bottom: 10%;
   }
 
   .lg\:my-1 {
