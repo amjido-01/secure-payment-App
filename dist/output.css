@@ -937,10 +937,6 @@ input[type="range"]::-ms-fill-lower {
   z-index: 20;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1052,6 +1048,10 @@ input[type="range"]::-ms-fill-lower {
   display: inline-flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -1144,6 +1144,10 @@ input[type="range"]::-ms-fill-lower {
   flex-shrink: 0;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1170,6 +1174,10 @@ input[type="range"]::-ms-fill-lower {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .-space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1242,6 +1250,10 @@ input[type="range"]::-ms-fill-lower {
   border-bottom-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1255,11 +1267,6 @@ input[type="range"]::-ms-fill-lower {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-green-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(4 108 78 / var(--tw-border-opacity));
 }
 
 .border-gray-900 {
@@ -1343,6 +1350,10 @@ input[type="range"]::-ms-fill-lower {
   padding: 1.25rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1376,6 +1387,16 @@ input[type="range"]::-ms-fill-lower {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pr-4 {
@@ -1839,6 +1860,14 @@ input[type="range"]::-ms-fill-lower {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:place-self-center {
+    place-self: center;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+
   .md\:border-0 {
     border-width: 0px;
   }
@@ -2047,18 +2076,6 @@ input[type="range"]::-ms-fill-lower {
     width: 35%;
   }
 
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .lg\:w-\[20\%\] {
-    width: 20%;
-  }
-
-  .lg\:w-\[\%\] {
-    width: %;
-  }
-
   .lg\:w-\[45\%\] {
     width: 45%;
   }
@@ -2067,8 +2084,8 @@ input[type="range"]::-ms-fill-lower {
     width: 40%;
   }
 
-  .lg\:w-40 {
-    width: 10rem;
+  .lg\:w-\[20\%\] {
+    width: 20%;
   }
 
   .lg\:flex-row {
