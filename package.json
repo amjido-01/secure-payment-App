@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwindcss build ./css/styles.css -o ./dist/output.css"
+    "tw:build": "tailwindcss build ./css/styles.css -o ./dist/output.css",
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
   },
   "keywords": [],
   "author": "",
