@@ -7,34 +7,36 @@ const _ = require('lodash');
 // read and write file module in node server
 const fs = require('fs');
 
+const ejs = require('ejs');
 app.set("view engine","ejs");
-app.set("views","./myViews");
+// app.set('views', './myViews');
 
 //port number
 const PORT = 3000;
 
 // serving static pages
-app.use(express.static('views'));
+app.use(express.static('public'));
 
 // index page route
 app.get('/', (req, res) => {
-    res.sendFile('./views/index.html', {root: __dirname})
+    res.render('index')
 })
 
 // about page route
 app.get('/about', (req, res) => {
-    res.sendFile('./views/about.html', {root: __dirname})
+    res.render('about')
 })
 
-// redirexting user based on request made to the server
-app.get('/about-us', (req, res) => {
-    res.redirect('/about', '302');
-    console.log(res.__dirname)
-})
+
+// redirecting user based on request made to the server
+// app.get('/about-us', (req, res) => {
+//     res.redirect('/about', '302');
+//     console.log(res.__dirname)
+// })
 
 // 404 page
 app.all('*', (req, res) => {
-    res.status(404).sendFile('./views/404.html', {root: __dirname})
+    res.status(404).render('404')
 })
 
 // app.use( (res, req) => {
