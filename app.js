@@ -6,19 +6,18 @@ const app = express();
 const _ = require('lodash');
 // read and write file module in node server
 const fs = require('fs');
-
+// morgan library
 const morgan = require('morgan')
-
+// ejs templating library
 const ejs = require('ejs');
 app.set("view engine","ejs");
 // app.set('views', './myViews');
 
 //port number
 const PORT = 3000;
-
 // serving static pages
 app.use(express.static('public'));
-
+// morgan instance
 app.use(morgan('tiny'))
 
 // index page route
@@ -31,6 +30,14 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
+
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
+app.get('/register', (req, res) => {
+    res.render('register')
+})
 
 // redirecting user based on request made to the server
 // app.get('/about-us', (req, res) => {
