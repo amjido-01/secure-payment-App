@@ -48,5 +48,6 @@ app.listen(PORT, (err, res) => {
     if (err) {
         console.log(err);
     }
-    console.log(`app is running on: ${PORT}:`)
+    console.log(`app is running on: ${PORT}:`);
+    console.log('request recieved at:' + Date.now())
 })
