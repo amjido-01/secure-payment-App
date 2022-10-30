@@ -7,6 +7,8 @@ const _ = require('lodash');
 // read and write file module in node server
 const fs = require('fs');
 
+const morgan = require('morgan')
+
 const ejs = require('ejs');
 app.set("view engine","ejs");
 // app.set('views', './myViews');
@@ -16,6 +18,8 @@ const PORT = 3000;
 
 // serving static pages
 app.use(express.static('public'));
+
+app.use(morgan('tiny'))
 
 // index page route
 app.get('/', (req, res) => {
