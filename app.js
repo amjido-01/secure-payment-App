@@ -7,16 +7,28 @@ const _ = require('lodash');
 // read and write file module in node server
 const fs = require('fs');
 
+const engine = require('ejs-layout')
+
+const ejs = require('ejs');
+
 const mongoose = require('mongoose');
 
-const flash = require('connect-flash');
+
+// database set up
+const db = require('./config/keys').MangoURI
+console.log(db)
+
+//connecting to our db
+mongoose.connect(db, { 'useNewUrlParser': true}).then(() => console.log('database connected'))
+.catch(() => console.log('not connected'))
+
+// const flash = require('connect-flash');
 // app.use(session()); // session middleware
 // app.use(require('flash')());
 
 // morgan library
-const morgan = require('morgan')
-// ejs templating library
-const ejs = require('ejs');
+// const morgan = require('morgan')
+// // ejs templating library
 app.set("view engine","ejs");
 app.engine('ejs', engine.__express);
 // app.set('views', './myViews');
@@ -26,10 +38,11 @@ const PORT = 3000;
 // serving static pages
 app.use(express.static('public'));
 // morgan instance
-app.use(morgan('tiny'))
+// app.use(morgan('tiny'))
 
 // index page route
 app.get('/', (req, res) => {
+    // throw new Error('broken')
     res.render('index')
 })
 
