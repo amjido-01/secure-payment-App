@@ -6,11 +6,19 @@ const app = express();
 const _ = require('lodash');
 // read and write file module in node server
 const fs = require('fs');
+
+const mongoose = require('mongoose');
+
+const flash = require('connect-flash');
+// app.use(session()); // session middleware
+// app.use(require('flash')());
+
 // morgan library
 const morgan = require('morgan')
 // ejs templating library
 const ejs = require('ejs');
 app.set("view engine","ejs");
+app.engine('ejs', engine.__express);
 // app.set('views', './myViews');
 
 //port number
