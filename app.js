@@ -1,17 +1,16 @@
-// require express server
 const express = require('express');
-// use express server
-const app = express();
-// lodash library
+const engine = require('ejs-layout');
+const mongoose = require('mongoose');
+const router = express.Router();
+const morgan = require('morgan');
 const _ = require('lodash');
-// read and write file module in node server
+const session = require('express-session');
+const flash = require('connect-flash');
+const passport = require('passport');
+const ejs = require('ejs');
 const fs = require('fs');
 
-const engine = require('ejs-layout')
-
-const ejs = require('ejs');
-
-const mongoose = require('mongoose');
+const app = express();
 
 
 // database set up
