@@ -1,5 +1,5 @@
 const express = require('express');
-const engine = require('ejs-layout');
+const expressEjsLayout = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const router = express.Router();
 const morgan = require('morgan');
@@ -21,43 +21,29 @@ console.log(db)
 mongoose.connect(db, { 'useNewUrlParser': true}).then(() => console.log('database connected'))
 .catch(() => console.log('not connected'))
 
-// const flash = require('connect-flash');
-// app.use(session()); // session middleware
-// app.use(require('flash')());
-
-// morgan library
-// const morgan = require('morgan')
-// // ejs templating library
-app.set("view engine","ejs");
-app.engine('ejs', engine.__express);
-// app.set('views', './myViews');
-
 //port number
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
+
+app.use(expressEjsLayout)
+app.set('view engine', 'ejs')
+
+
 // serving static pages
-app.use(express.static('public'));
-// morgan instance
+app.use(express.static('public'))
 // app.use(morgan('tiny'))
 
 // index page route
-app.get('/', (req, res) => {
-    // throw new Error('broken')
-    res.render('index')
-})
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
+
 
 // about page route
-app.get('/about', (req, res) => {
-    res.render('about')
-})
+// app.get('/about', (req, res) => {
+//     res.render('about')
+// })
 
 
-app.get('/login', (req, res) => {
-    res.render('login')
-})
-
-app.get('/register', (req, res) => {
-    res.render('register')
-})
 
 // redirecting user based on request made to the server
 // app.get('/about-us', (req, res) => {
