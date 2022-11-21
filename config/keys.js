@@ -1,3 +1,3 @@
 module.exports = {
-    MangoURI: 'mongodb+srv://my_cluster_username:987654321_cluster@cluster0.wcykvir.mongodb.net/?retryWrites=true&w=majority'
+    mongoURI: 'mongodb+srv://my_mango:my_mango@cluster0.cczf9jc.mongodb.net/?retryWrites=true&w=majority'
 }

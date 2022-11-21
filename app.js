@@ -14,13 +14,14 @@ const app = express();
 
 
 // database set up
-const db = require('./config/keys').MangoURI
+const db = require('./config/keys').mongoURI;
 
-
-//connecting to our db
-mongoose.connect(db, { 'useNewUrlParser': true})
-.then(() => console.log('database connected'))
+mongoose.connect(db, { useNewUrlParser: true })
+.then(() => console.log('db connected'))
 .catch(() => console.log('not connected'))
+
+
+
 
 //port number
 const PORT = process.env.PORT || 3000;
