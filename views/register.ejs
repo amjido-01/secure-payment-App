@@ -11,6 +11,7 @@
                 <!-- <h1 class="text-3xl font-semibold text-center text-secondary-blue">Log In</h1> -->
                 <h1 class="mb-8 text-3xl font-semibold text-secondary-blue text-center">Sign up</h1>
                 <form action="/users/register" method="POST">
+                    <%- include ('./partial/message') %>
                     <div>
                         <label for="full-name" class="block text-sm text-gray-800 dark:text-gray-200 cursor-pointer">Full Name</label>
                         <input 

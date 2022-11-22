@@ -15,6 +15,9 @@ router.get('/register', (req, res) => {
 
 
 router.post('/register', (req, res) => {
+
+    // console.log(req.body)
+    // res.send('hello')
     const { name, email, password, c_password } = req.body;
 
     let errors = [];
@@ -70,7 +73,8 @@ router.post('/register', (req, res) => {
                         newUser.password = hash;
 
                         // now let save
-                        newUser.save().then((value) => {
+                        newUser.save()
+                            .then((value) => {
                             console.log(value);
                             req.flash('success_msg', 'You are now registered, you can login!');
                             res.redirect('/users/login')

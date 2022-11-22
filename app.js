@@ -2,7 +2,7 @@ const express = require('express');
 const expressEjsLayout = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const router = express.Router();
-const morgan = require('morgan');
+const morgan = require('morgan')
 const _ = require('lodash');
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -50,7 +50,6 @@ app.use('/users', require('./routes/users'));
 app.all('*', (req, res) => {
     res.status(404).render('404')
 })
-
 
 app.use(morgan('tiny'))
 
