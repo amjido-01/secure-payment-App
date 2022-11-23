@@ -21,8 +21,6 @@ mongoose.connect(db, { useNewUrlParser: true })
 .catch(() => console.log('not connected'))
 
 
-
-
 //port number
 const PORT = process.env.PORT || 3000;
 
@@ -46,12 +44,14 @@ app.use('/users', require('./routes/users'));
 
 //coming back redirecting user based on request made to the server
 
+app.use(morgan('tiny'))
+
 // 404 page
 app.all('*', (req, res) => {
     res.status(404).render('404')
 })
 
-app.use(morgan('tiny'))
+
 
 // server listing to the port number
 app.listen(PORT, (err, res) => {
